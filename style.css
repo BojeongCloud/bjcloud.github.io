@@ -40,10 +40,37 @@ section.index {
 .index-logo {
 	width: 100%;
 	height: auto;
+	margin-bottom: 16px;
 	
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: row;
+}
+
+.mobile .index-logo {
+	margin: 0;
+	flex-direction: column;
+}
+
+.index-logo svg {
+	width: 240px;
+}
+
+.mobile .index-logo svg {
+	width: 80%;
+	margin-bottom: 16px;
+}
+
+index-logo h1 {
+	width: 280px;
+	flex-grow: 0;
+	font-size: 80px;
+}
+
+.mobile .index-logo h1 {
+	width: auto;
+	font-size: 36px;
 }
 
 .h_t1 { font-size: .8em; color: #616161; }

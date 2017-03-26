@@ -1,10 +1,3 @@
-var newStyle = document.createElement('link');
-newStyle.rel = 'stylesheet';
-
-if (screen.availWidth < 500) {
-	newStyle.href = 'css/mobile.css';
-} else {
-	newStyle.href = 'css/desktop.css';
+if (screen.availWidth < 420) {
+	document.getElementsByClassName('wrap')[0].classList.add('mobile');
 }
-
-document.body.insertBefore(newStyle, document.body.firstChild);
