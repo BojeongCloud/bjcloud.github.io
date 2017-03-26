@@ -1,0 +1,15 @@
+@charset 'UTF-8';
+
+.index-logo {
+	flex-direction: column;
+}
+
+.index-logo svg {
+	width: 80%;
+	margin-bottom: 16px;
+}
+
+.index-logo h1 {
+	font-size: 36px;
+}
+
