@@ -43,9 +43,16 @@
 		</section>
 	</div>
 <!--	<script rel="javascript" src="script.js"></script>	-->
-	<script>
-		if (screen.availWidth < 420)
-			document.getElementsByClassName('wrap')[0].classList.add('mobile');
+	<script rel="javascript">
+		function detectMobile() {
+			if (window.innerWidth < 600) {
+				document.getElementsByClassName('wrap')[0].classList.add('mobile');
+			} else {
+				document.getElementsByClassName('wrap')[0].classList.remove('mobile');
+			}
+		}
+		detectMobile();
+		window.addEventListener('resize', detectMobile);
 	</script>
 </body>
 </html>
