@@ -62,7 +62,7 @@ section.index {
 	margin-bottom: 16px;
 }
 
-index-logo h1 {
+.index-logo h1 {
 	width: 280px;
 	flex-grow: 0;
 	font-size: 80px;
